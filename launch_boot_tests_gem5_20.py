@@ -112,8 +112,8 @@ linux_binaries = {
 if __name__ == "__main__":
     boot_types = ['init', 'systemd']
     num_cpus = ['1', '2', '4', '8']
-    cpu_types = ['kvm', 'atomic', 'simple', 'o3']
-    mem_types = ['classic'] + ruby_mem_types 
+    cpu_types = ['atomic', 'simple', 'o3']
+    mem_types = ['classic'] + ruby_mem_types
 
     def createRun(linux, boot_type, cpu, num_cpu, mem):
 
